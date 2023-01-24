@@ -12,7 +12,7 @@ I'm going to keep a list of the projects listed in here for easy access and desc
 I have decided to take this one on first as I know it's something I've seen many times and thought "Wow that's really outdated.  I've taken screenshots of the site to compare to later on
 
 **Mobile Site**
-[Mobile Site](./project-1/assets/img/mobile.png)
+![Mobile Site](./project-1/assets/img/mobile.png)
 
 **Desktop Site**
-[Desktop Site](./project-1/assets/img/desktop.png)
+![Desktop Site](./project-1/assets/img/desktop.png)
