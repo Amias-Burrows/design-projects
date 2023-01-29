@@ -1,0 +1,13 @@
+@font-face {
+    font-family: amazon-ember;
+    src: url('../../fonts/Amazon_Typefaces_Complete_Font_Set_Mar2020/Ember/AmazonEmber_Rg.woff');
+}
+
+:root {
+    font-size: 16px;
+    font-family: amazon-ember;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,25 @@
+html {
+
+    body {
+        margin: 0;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .spacer {
+            width: 100%;
+        }
+
+        i {
+            font-size: 100%;
+        }
+
+        @import "../header/header";
+
+        @import "../main/main";
+
+        @import "../footer/footer";
+    }
+}
