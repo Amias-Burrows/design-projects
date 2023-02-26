@@ -6,7 +6,7 @@ I've decided I'm going to pick a website and do two things to it.  I'm going to 
 
 I'm going to keep a list of the projects listed in here for easy access and describe them hopefully like little blog posts
 
-### [Project 1](https://github.amias.dev/design-projects/project-1/index.html)
+### [Project 1](https://github.amias.dev/design-projects/project-1)
 ## [Pinterest post](https://pin.it/366MPyK)
 
 ![Image of post](./project-1/assets/img/design.jpg)
