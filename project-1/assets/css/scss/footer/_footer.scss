@@ -1,0 +1,29 @@
+footer {
+    padding: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (max-width: $mobile-landscape) {
+        flex-direction: column-reverse;
+        nav#footer-nav {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    nav {
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+    }
+}
