@@ -14,3 +14,8 @@ I'm going to keep a list of the projects listed in here for easy access and desc
 I hade found a pinterest post which I decided I would recreate.  It's a fairly simple one but I wanted to test the use of [Sass Mixins](https://sass-lang.com/documentation/at-rules/mixin) and how I can structure the css in a way that cuts down the speed it takes to replicate a design.
 
 This project has gone well in my opinion, I've used some simple jquery to animate the header and nav bar.  This was not on the design but seemed like the right fit for the style of website I was doing.
+
+## Bibliography
+
+- [Shutterstock](https://shutterstock.com) was used to create a simple logo for [Project 1](#project-1)
+- [Coolors](https://coolors.co) was used to get the colour theme used in projects, either from [Image Picker](https://coolors.co/image-picker) or the [Generator](https://coolors.co/generate) they have.
