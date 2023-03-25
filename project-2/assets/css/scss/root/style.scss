@@ -1,0 +1,16 @@
+@import '../breakpoints';
+@import '../colours';
+@import '../mixins';
+@import '../fonts';
+
+html {
+
+    body {
+        
+        @import '../header/header';
+
+        @import '../main/main';
+
+        @import '../footer/footer';
+    }
+}

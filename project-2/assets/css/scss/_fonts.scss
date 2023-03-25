@@ -8,5 +8,5 @@ a {
 }
 
 a.btn button {
-    border-radius: 5px;
+    @include btn;
 }
