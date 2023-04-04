@@ -1,14 +1,61 @@
 header {
+    @include section;
+
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
     #logo-section {
-        @include btn;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
 
         img {
-            width: 100%;
+            height: 50px;
+        }
+
+        span {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
+    nav {
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            text-transform: uppercase;
+        
+            a {
+                font-weight: 600;
+
+                &.selected {
+                    color: $accent;
+                    position: relative;
+            
+                    &::after {
+                        content: '';
+                        color: $accent;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 2px;
+                        background-color: $accent;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,10 +1,49 @@
 :root {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 62.5%;
+}
+
+p, span, a {
+    font-size: 1.6rem;
+}
+
+@mixin secondary-text {
+    font-size: 1.4rem;
+    color: rgba($dark, 0.7);
+}
+
+@mixin sub-header {
+    font-size: 1.8rem;
+}
+
+@mixin clickable {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+
+    b {
+        font-weight: 600;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 a {
     text-decoration: none;
+    color: $dark;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a.btn button {

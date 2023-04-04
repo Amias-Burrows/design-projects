@@ -1,8 +1,0 @@
-@mixin btn($background-color: $accent, $color: $light) {
-    background-color: $background-color;
-    color: $color;
-
-    border-radius: 13px;
-    font-size: 1rem;
-    padding: 20px 50px;
-}

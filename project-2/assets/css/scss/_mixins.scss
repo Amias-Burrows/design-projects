@@ -1,3 +1,14 @@
-@mixin btn {
-    border-radius: 5px;
+@mixin btn($background-color: $accent, $color: $light) {
+    background-color: $background-color;
+    color: $color;
+
+    border-radius: 13px;
+    font-size: 1rem;
+    padding: 20px 50px;
+}
+
+@mixin section($margin: 20px) {
+    max-width: 1400px;
+    width: calc(100% - ($margin * 2));
+    margin: calc($margin + 20px) auto;
 }
