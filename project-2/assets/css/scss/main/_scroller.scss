@@ -1,0 +1,79 @@
+#hero-img {
+
+    @include overlay($light, 0.1);
+    @include circle(70vw);
+
+    z-index: 1;
+    position: absolute;
+    top: -20%;
+    right: -15%;
+    box-shadow: rgba($accent, 0.2) 100px 0px 0 100px;
+
+    .img-track {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+
+        img {
+
+            @include circle(100%);
+
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+
+            transition: {
+                property: opacity;
+                duration: 0.5s;
+            }
+
+            &.selected {
+                opacity: 1;
+            }
+        }
+    }
+
+    .img-counter {
+
+        @include circle(100px);
+
+        background-color: $light;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba($dark, 0.2) 0 0 15px;
+    }
+
+    .img-scroll-chips {
+        
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+
+        .img-scroller {
+
+            @include circle(15px);
+
+            border: {
+                color: $accent;
+                width: 2px;
+                style: solid;
+                radius: 50%;
+            }
+            transition: {
+                property: background-color;
+                duration: 0.2;
+            }
+            cursor: pointer;
+
+            &.selected {
+                background-color: $accent;
+            }
+        }
+    }
+}

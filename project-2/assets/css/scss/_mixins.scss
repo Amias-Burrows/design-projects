@@ -12,3 +12,20 @@
     width: calc(100% - ($margin * 2));
     margin: calc($margin + 20px) auto;
 }
+
+@mixin circle($size: 50px) {
+    width: $size;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+@mixin overlay($color: $light, $opacity: 0.5) {
+    position: relative;
+
+    .overlay {
+        inset: 0px;
+        background-color: rgba($color, $opacity);
+        position: absolute;
+        z-index: 3;
+    }
+}
