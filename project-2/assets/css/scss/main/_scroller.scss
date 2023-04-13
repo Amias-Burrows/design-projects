@@ -5,7 +5,7 @@
 
     z-index: 1;
     position: absolute;
-    top: -20%;
+    top: -20vw;
     right: -15%;
     box-shadow: rgba($accent, 0.2) 100px 0px 0 100px;
 
@@ -37,25 +37,22 @@
 
     .img-counter {
 
-        @include circle(100px);
+        @include floating-circle($size: 100px);
+        @include absolute($bottom: 10%, $left: 10%);
 
         background-color: $light;
-        position: absolute;
-        bottom: 10%;
-        left: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: rgba($dark, 0.2) 0 0 15px;
     }
 
     .img-scroll-chips {
         
-        position: absolute;
-        bottom: 10px;
-        left: 10%;
+        @include absolute($bottom: calc(10% - 70px), $left: calc(10% + 75px));
+        @include flex($gap: 20px);
+
+        transform: rotate(45deg);
 
         .img-scroller {
+
+            $accent: darken($accent, 30);
 
             @include circle(15px);
 

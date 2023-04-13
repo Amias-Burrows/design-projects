@@ -3,7 +3,6 @@
     color: $color;
 
     border-radius: 13px;
-    font-size: 1rem;
     padding: 20px 50px;
 }
 
@@ -28,4 +27,58 @@
         position: absolute;
         z-index: 3;
     }
+}
+
+@mixin flex($direction: row, $justify: center, $align: center, $gap: false) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    @if ($gap != false) {
+        gap: $gap;
+    }
+}
+
+@mixin fixed($top: false, $right: false, $bottom: false, $left: false) {
+    position: fixed;
+    
+    @if ($top != false) {
+        top: $top;
+    }
+    @if ($right != false) {
+        right: $right;
+    }
+    @if ($bottom != false) {
+        bottom: $bottom;
+    }
+    @if ($left != false) {
+        left: $left;
+    }
+}
+
+@mixin absolute($top: false, $right: false, $bottom: false, $left: false) {
+    position: absolute;
+    
+    @if ($top != false) {
+        top: $top;
+    }
+    @if ($right != false) {
+        right: $right;
+    }
+    @if ($bottom != false) {
+        bottom: $bottom;
+    }
+    @if ($left != false) {
+        left: $left;
+    }
+}
+
+@mixin floating-circle($background-color: $light, $color: $dark, $shadow-color: $dark, $shadow-opacity: 0.2, $size: 50px) {
+    
+    @include circle($size);
+    @include flex;
+                    
+    background-color: $background-color;
+    color: $color;
+    box-shadow: rgba($shadow-color, $shadow-opacity) 5px 5px 15px;
 }

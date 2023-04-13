@@ -14,3 +14,7 @@ html {
         @import '../footer/footer';
     }
 }
+
+.btn {
+    @include btn;
+}
