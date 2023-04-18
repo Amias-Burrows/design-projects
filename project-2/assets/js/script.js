@@ -1,6 +1,7 @@
 jQuery(document).ready(() => {
     $ = jQuery;
 
+        // This function collates all the functions that need to run when the page loads
     const init = () => {
 
         showSliderImages();
@@ -96,5 +97,6 @@ jQuery(document).ready(() => {
         })
     }
 
+        // Calls the init() function which links to all the functions that should run when the page loads
     init();
 });

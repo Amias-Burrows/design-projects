@@ -1,8 +1,10 @@
 @mixin btn($background-color: $accent, $color: $light) {
+    
+    @include border-radius;
+
     background-color: $background-color;
     color: $color;
 
-    border-radius: 13px;
     padding: 20px 50px;
 }
 
@@ -73,6 +75,23 @@
     }
 }
 
+@mixin relative($top: false, $right: false, $bottom: false, $left: false) {
+    position: relative;
+    
+    @if ($top != false) {
+        top: $top;
+    }
+    @if ($right != false) {
+        right: $right;
+    }
+    @if ($bottom != false) {
+        bottom: $bottom;
+    }
+    @if ($left != false) {
+        left: $left;
+    }
+}
+
 @mixin floating-circle($background-color: $light, $color: $dark, $shadow-color: $dark, $shadow-opacity: 0.2, $size: 50px) {
     
     @include circle($size);
@@ -81,4 +100,12 @@
     background-color: $background-color;
     color: $color;
     box-shadow: rgba($shadow-color, $shadow-opacity) 5px 5px 15px;
+}
+
+@mixin border-radius($radius: 13px) {
+    border-radius: 15px;
+}
+
+@mixin section-padding {
+    padding: 50px 30px;
 }

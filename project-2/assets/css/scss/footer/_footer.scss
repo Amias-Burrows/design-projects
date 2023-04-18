@@ -1,0 +1,46 @@
+footer {
+
+
+    background-color: $primary;
+    margin-top: 100px;
+    
+    #contact {
+
+        @include section;
+        @include border-radius;
+        @include section-padding;
+        @include flex($justify: space-between);
+
+        background-color: $secondary;
+        transform: translateY(-50%);
+
+        span {
+
+            color: $light;
+            font-size: 3.7rem;
+            font-weight: 600;
+        }
+
+        .btn {
+
+            @include btn($light, $primary);
+        }
+    }
+
+    #footer-content {
+
+        @include section;
+        @include flex;
+
+        color: $light;
+
+        img {
+            width: 10%;
+        }
+
+        a {
+            color: darken($light, 50%);
+            font-weight: 200;
+        }
+    }
+}
